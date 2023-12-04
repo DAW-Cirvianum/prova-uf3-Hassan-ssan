@@ -24,6 +24,18 @@
         }
 
 
+        public function getAnswersById($id){
+            $query = "SELECT * FROM answers where question_id = :question_id";
+            $params = [
+                ':question_id' => $id
+            ];
+            $db = new Database();
+            $rs = $db->queryDataBase($query, $params)->fetchAll();
+    
+            return $rs;
+        }
+
+
 
 
 

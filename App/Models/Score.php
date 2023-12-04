@@ -16,7 +16,7 @@
                 incorrect_answers INT NOT NULL,
                 quiz_id INT NOT NULL,
                 name VARCHAR(150) NOT NULL,
-                FOREIGN KEY (quiz_id) REFERENCES quiz.quizzes(id)
+                FOREIGN KEY (quiz_id) REFERENCES quiz.quizzes(id) ON DELETE CASCADE
             ) ENGINE=InnoDB;";
             $db->queryDataBase($sql);
 

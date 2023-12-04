@@ -42,18 +42,6 @@
         }
 
 
-        // public function sountQuestions($quizzes){
-        //     foreach ($quizzes as $key => $qz) {
-        //         $query = "SELECT * FROM questions WHERE quiz_id = :quiz_id";
-        //         $params = [
-        //             ':quiz_id' => $qz['id']
-        //         ];
-        //         $db = new Database();
-        //         $rs = $db->queryDataBase($query, $params)->rowCount();
-
-        //         $quizzes[$key]['question']
-        //     }
-        // }
 
     }
 
